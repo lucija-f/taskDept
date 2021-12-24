@@ -28,9 +28,20 @@
   color: #61dafb;
 }
 
+.color-container {
+  margin: 1px 0;
+  background-color: #282c34;
+}
+.color-container p {
+  font-size: 18px;
+  margin: 0;
+  padding: 10px;
+}
+
 .btn-color {
   width: auto;
-  background-color: white;
+  border: solid 3px;
+  background-color: #282c34;
   border-radius: 20px;
   letter-spacing: 1px;
   font-size: 18px;
@@ -52,6 +63,10 @@ input {
   flex-direction: column;
   margin: 20px;
   width: auto;
+}
+
+.dragContext {
+  background-color: #3c424d;
 }
 
 @keyframes App-logo-spin {
