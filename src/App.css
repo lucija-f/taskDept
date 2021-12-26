@@ -28,6 +28,22 @@
   color: #61dafb;
 }
 
+/* my CSS */
+
+.content-div {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: 0 20px;
+  min-width: 250px;
+  width: auto;
+}
+
+.drag-context {
+  background-color: #3c424d;
+  margin: 0;
+}
+
 .color-container {
   margin: 1px 0;
   background-color: #282c34;
@@ -38,8 +54,12 @@
   padding: 10px;
 }
 
+.input-validatin-container {
+  height: auto;
+}
+
 .btn-color {
-  width: auto;
+  width: 100%;
   border: solid 3px;
   background-color: #282c34;
   border-radius: 20px;
@@ -47,26 +67,32 @@
   font-size: 18px;
   font-weight: 600;
   padding: 10px 25px;
-  margin: 20px 0;
+  margin: 0 auto;
   cursor: pointer;
   outline: none;
 }
 
 input {
-  width: 100%;
+  width: 93%;
   height: 30px;
-}
-
-.content-div {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  margin: 20px;
-  width: auto;
-}
-
-.dragContext {
+  padding: 5px;
   background-color: #3c424d;
+  color: #eee;
+  border-radius: 10px;
+  border: 1px solid #eee;
+  transition: 0.3s border-color;
+  margin: 15px 0;
+}
+
+.input:hover {
+  border: 1px solid #aaa;
+}
+
+.errorMsg {
+  font-size: 12px;
+  color: red;
+  background-color: #282c34;
+  margin: 0;
 }
 
 @keyframes App-logo-spin {
